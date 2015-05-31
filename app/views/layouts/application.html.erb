@@ -3,7 +3,7 @@
 <head>
   <title>Bookstore</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -20,6 +20,17 @@
 </nav>
 
 <%= yield %>
+
+<div id="page">
+  <p>
+
+    <a href="#" class="btn">Buy Now</a>
+    <a href="#" class="btn">Join</a>
+  </p>
+</div>
+
+<footer id="footer">
+</footer>
 
 </body>
 </html>

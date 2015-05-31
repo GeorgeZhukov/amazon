@@ -14,9 +14,20 @@
  *= require_self
  */
 
-body {
+html, body {
+    height: 100%;
     margin: 0;
+}
+
+body {
     font-family: 'Open Sans', sans-serif;
+}
+
+#page {
+    min-height: 100%;
+    padding: 20px;
+    margin-bottom: 200px;
+    font-size: 14px;
 }
 
 #top-menu {
@@ -36,8 +47,8 @@ body {
 }
 
 #logo {
-    margin-bottom: -6px;
-    width: 24px;
+    margin-bottom: -4px;
+    width: 20px;
 }
 
 #top-menu li {
@@ -49,4 +60,29 @@ body {
 
 #top-menu li:hover {
     color: #bababa;
+}
+
+.btn {
+    /* Rectangle 1: */
+    background-image: linear-gradient(-180deg, #45A4DE 0%, #2287C8 100%);
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.btn:hover {
+    /* Rectangle 1: */
+    background-image: linear-gradient(-180deg, #49A4DC 0%, #2C8FCE 100%);
+    border-radius: 4px;
+}
+
+#footer {
+    padding: 20px;
+    margin-top: -200px;
+    width: 100%;
+    height: 200px;
+    background-color: #eaeaea;
 }
