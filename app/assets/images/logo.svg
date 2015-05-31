@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="364px" height="136px" viewBox="0 0 364 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="0%" y2="87.104024%" id="linearGradient-1">
+            <stop stop-color="#2D9AE1" offset="0%"></stop>
+            <stop stop-color="#2EB2E7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logo" sketch:type="MSLayerGroup">
+            <rect id="Rectangle-1" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup" x="0" y="32" width="364" height="73" rx="6"></rect>
+            <circle id="Oval-1" fill="#30D38B" sketch:type="MSShapeGroup" cx="191" cy="68" r="68"></circle>
+            <text id="Bookstore" sketch:type="MSTextLayer" font-family="Avenir Next" font-size="66.3494624" font-weight="260" fill="#FFFFFF">
+                <tspan x="40" y="91">Bookstore</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
