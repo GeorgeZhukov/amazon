@@ -2,11 +2,22 @@
 <html>
 <head>
   <title>Bookstore</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<nav id="top-menu">
+  <ul>
+    <li><a href="#"><%= image_tag "book.png", id: "logo" %></a></li>
+    <li>Books</li>
+    <li>Prices</li>
+    <li>Delivery</li>
+    <li>Contact us</li>
+  </ul>
+</nav>
 
 <%= yield %>
 
