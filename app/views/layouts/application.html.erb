@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Bookstore</title>
-  <meta name="viewport" content="width=1200">
+  <meta name="viewport" content="width=1000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -22,15 +23,36 @@
 
 <%= yield %>
 
-<div id="page">
-  <p>
+<section id="page">
+  <article id="page-content">
+    <h1>Atlas Shrugged - Ayn Rand</h1>
 
-    <a href="#" class="btn">Buy Now</a>
-    <a href="#" class="btn">Join</a>
-  </p>
-</div>
+    <%= image_tag "atlas-shrugged-book-cover.jpg", class: "book_cover" %>
+
+    <h3>Description:</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aperiam architecto assumenda consequatur
+      consequuntur cumque facilis illum incidunt iste laborum maiores minima obcaecati quas repellat sint temporibus
+      veritatis voluptate. Molestias!</p>
+
+    <div class="purchase">
+      <ul>
+        <li><strong>Available to ship:</strong></li>
+        <li><span class="price">$39.99</span></li>
+        <li>Free shipping</li>
+        <li><a href="#" class="btn btn-success add-to-cart">Add to Cart</a></li>
+      </ul>
+    </div>
+
+
+    <div class="clearfix"></div>
+
+  </article>
+</section>
 
 <footer id="footer">
+  <div class="footer-rights-label">
+    <p>Copyright © 2015 Bookstore Inc. All rights reserved.</p>
+  </div>
 </footer>
 
 </body>
