@@ -5,5 +5,6 @@ class CreateCountries < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    add_index :countries, :name, :unique => true
   end
 end

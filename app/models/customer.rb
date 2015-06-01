@@ -10,4 +10,12 @@ class Customer < ActiveRecord::Base
   before_save do
     self.email.downcase!
   end
+
+  def create_new_order
+    Order.new(customer: self)
+  end
+
+  def current_order_in_progress
+    self.orders.in_progress.first
+  end
 end
