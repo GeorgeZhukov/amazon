@@ -56,11 +56,15 @@ ActiveRecord::Schema.define(version: 20150605133734) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "categories", ["title"], name: "index_categories_on_title", unique: true, using: :btree
+
   create_table "countries", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "countries", ["name"], name: "index_countries_on_name", unique: true, using: :btree
 
   create_table "credit_cards", force: :cascade do |t|
     t.string   "number"
@@ -84,6 +88,8 @@ ActiveRecord::Schema.define(version: 20150605133734) do
     t.datetime "updated_at",      null: false
     t.string   "password_digest"
   end
+
+  add_index "customers", ["email"], name: "index_customers_on_email", unique: true, using: :btree
 
   create_table "order_items", force: :cascade do |t|
     t.decimal  "price",      precision: 8, scale: 2
@@ -109,8 +115,10 @@ ActiveRecord::Schema.define(version: 20150605133734) do
     t.integer  "shipping_address_id"
   end
 
+  add_index "orders", ["billing_address_id"], name: "index_orders_on_billing_address_id", using: :btree
   add_index "orders", ["credit_card_id"], name: "index_orders_on_credit_card_id", using: :btree
   add_index "orders", ["customer_id"], name: "index_orders_on_customer_id", using: :btree
+  add_index "orders", ["shipping_address_id"], name: "index_orders_on_shipping_address_id", using: :btree
 
   create_table "ratings", force: :cascade do |t|
     t.text     "review"
