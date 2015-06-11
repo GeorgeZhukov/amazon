@@ -4,8 +4,8 @@ FactoryGirl.define do
     number { Faker::Number.number(14) }
     first_name { Faker::Name.first_name }
     last_name { Faker::Name.last_name }
-    expiration_month 1
-    expiration_year 1
+    expiration_month { Faker::Number.number(2) }
+    expiration_year { Faker::Number.number(4) }
     customer nil
   end
 

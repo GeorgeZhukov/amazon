@@ -1,11 +1,11 @@
 FactoryGirl.define do
   factory :book do
-    title "MyString"
-description "MyText"
-price "9.99"
-books_in_stock 1
-author nil
-category nil
+    title { Faker::Lorem.sentence }
+    description { Faker::Lorem.paragraph }
+    price { Faker::Commerce.price }
+    books_in_stock { Faker::Number.number(2) }
+    author nil
+    category nil
   end
 
 end
