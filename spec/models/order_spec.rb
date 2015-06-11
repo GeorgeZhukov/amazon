@@ -14,4 +14,14 @@ RSpec.describe Order, type: :model do
     subject.save
     expect(subject.state).to eq "in progress"
   end
+
+  describe "#add_book" do
+    it "increase quantity by one when add same book" do
+      order = FactoryGirl.create :order
+      book = FactoryGirl.create :book
+      order.add_book(book)
+      order.add_book(book)
+      expect(OrderItem.first.quantity).to eq 2
+    end
+  end
 end
